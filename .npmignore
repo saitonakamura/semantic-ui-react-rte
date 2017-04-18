@@ -1,0 +1,17 @@
+_*
+/.git
+/assets
+/flow-typed
+/node_modules
+/flow-typed
+/src
+/test
+.babelrc
+.eslintignore
+.eslintrc
+.flowconfig
+.travis.yml
+CNAME
+start.ps1
+webpack.config.js
+webpack.umd.config.js
