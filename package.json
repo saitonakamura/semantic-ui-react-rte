@@ -1,6 +1,6 @@
 {
   "name": "semantic-ui-react-rte",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Sematic UI React Rich Text Editor",
   "main": "dist/semantic-ui-react-rte.js",
   "scripts": {
@@ -13,7 +13,8 @@
     "prepublish": "npm run test && npm run build",
     "start": "webpack-dev-server --content-base assets/",
     "test": "npm run lint && npm run typecheck && npm run test-src",
-    "test-src": "mocha \"src/**/__tests__/*.js\""
+    "test-src": "mocha \"src/**/__tests__/*.js\"",
+    "setup": "npm install react react-dom semantic-ui-css semantic-ui-react && npm install"
   },
   "dependencies": {
     "class-autobind": "^0.1.4",
@@ -59,7 +60,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/saitonakamura/react-rte/tree/semantic-ui"
+    "url": "git+https://github.com/saitonakamura/semantic-ui-react-rte.git"
   },
   "keywords": [
     "semantic-ui",
@@ -74,7 +75,7 @@
   "author": "saitonakamuramb@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/saitonakamura/react-rte/issues"
+    "url": "https://github.com/saitonakamura/semantic-ui-react-rte/issues"
   },
-  "homepage": "https://github.com/saitonakamura/react-rte#readme"
+  "homepage": "https://github.com/saitonakamura/semantic-ui-react-rte#readme"
 }
