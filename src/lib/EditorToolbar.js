@@ -245,11 +245,15 @@ export default class EditorToolbar extends Component {
     if (isShowing) {
       let shouldFocusEditor = true;
       if (event && event.type === 'click') {
+        const rootNode = ReactDOM.findDOMNode(this);
+        if (!rootNode) {
+          return;
+        }
         // TODO: Use a better way to get the editor root node.
-        let editorRoot = ReactDOM.findDOMNode(this).parentNode;
+        let editorRoot = rootNode.parentNode;
         let {activeElement} = document;
         let wasClickAway = (activeElement == null || activeElement === document.body);
-        if (!wasClickAway && !editorRoot.contains(activeElement)) {
+        if (!wasClickAway && editorRoot && !editorRoot.contains(activeElement)) {
           shouldFocusEditor = false;
         }
       }
