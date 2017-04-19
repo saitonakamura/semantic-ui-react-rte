@@ -3,6 +3,7 @@
 <p>
   <a href="https://www.npmjs.com/package/semantic-ui-react-rte">
     <img alt="npm" src="https://img.shields.io/npm/v/semantic-ui-react-rte.svg?style=flat-square" />
+    <img alt="travis-ci" src="https://travis-ci.org/saitonakamura/semantic-ui-react-rte.svg?branch=master" />
   </a>
 </p>
 
